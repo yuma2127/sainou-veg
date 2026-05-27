@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- =========================================================
      index.html  ―― サイトの入口（トップページ）
-     👤 担当：構成リーダー（　　　　　　　　）さん
+     👤 担当：構成リーダー（ 河野裕真 ）さん
 
      このページは「お店の入口」です。
      ・上に大きな写真（ヒーロー）
@@ -15,12 +15,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ✏️ ブラウザのタブに出る名前。学校・農場の名前に変えよう -->
-  <title>○○農業高校 直売所サイト</title>
+  <!-- ブラウザのタブに出る名前 -->
+  <title>愛媛県立西条農業高等学校 直売所サイト</title>
 
-  <!-- 見た目を読み込む（さわらなくてOK） -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-  <!-- フォント（さわらなくてOK） -->
+
+  <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
@@ -28,73 +29,87 @@
 
 <body>
 
-  <!-- ▼ 上の帯（全ページ共通）✏️ 農場名を変えよう -->
+  <!-- ▼ 上の帯 -->
   <header class="site-header">
-    <div class="farm-name">🌱 ○○農業高校 直売所</div>
+    <div class="farm-name">🌱 愛媛県立西条農業高等学校 直売所</div>
     <div class="farm-sub">わたしたちが育てた作物を紹介します</div>
   </header>
 
-  <!-- ▼ ヒーロー（一番上の大きな写真）✏️ images/hero.jpg を自分たちの写真に -->
+  <!-- ▼ ヒーロー -->
   <section class="hero">
     <img src="images/hero.jpg" alt="学校農場の写真">
+
     <div class="hero-text">
       <h1>畑から、まっすぐ。</h1>
-      <p>○年○組のみんなで育てました</p>
+      <p>3年S組のみんなで育てました</p>
     </div>
   </section>
 
-  <!-- ▼ ここから作物の一覧 -->
+  <!-- ▼ 作物一覧 -->
   <main class="container">
+
     <h2 class="section-title">今日のおすすめ</h2>
     <p class="lead">気になる作物をタップしてみてください</p>
 
     <div class="card-grid">
 
-      <!-- ===== カード1：トマト（見本ページにリンク）===== -->
-      <a class="card" href="tomato.html">
-        <img src="images/tomato.jpg" alt="トマト">
+      <!-- ===== トマト1 ===== -->
+      <a class="card" href="tomato1.html">
+
+        <img src="images/tomato.jpg" alt="完熟トマト">
+
         <div class="card-body">
           <span class="tag">完熟</span>
-          <h3>あま～いトマト</h3>
-          <p>朝もぎたて。生でガブッといけます。</p>
+
+          <h3>あま～い完熟トマト</h3>
+
+          <p>
+            朝採れ新鮮！
+            甘みたっぷりです。
+          </p>
         </div>
       </a>
 
-          <a class="card" href="tomato.html">
-        <img src="images/tomato.jpg" alt="トマト">
+      <!-- ===== トマト2 ===== -->
+      <a class="card" href="tomato2.html">
+
+        <img src="images/tomato.jpg" alt="ミニトマト">
+
         <div class="card-body">
-          <span class="tag">完熟</span>
-          <h3>あま～いトマト</h3>
-          <p>朝もぎたて。生でガブッといけます。</p>
-        </div>
-      </a>
-      <!-- ===== カード2：あなたの作物（コピーして増やせる）===== -->
-      <!-- ✏️ href を作ったページ名に、img を写真に、文章を自分の言葉に -->
-      <a class="card" href="template-product.html">
-        <img src="images/photo.jpg" alt="作物の名前">
-        <div class="card-body">
-          <span class="tag">タグ</span>
-          <h3>作物の名前</h3>
-          <p>ひとことアピール（20文字くらい）</p>
+          <span class="tag">人気</span>
+
+          <h3>ミニトマト</h3>
+
+          <p>
+            お弁当にぴったり！
+            小さくて食べやすいです。
+          </p>
         </div>
       </a>
 
-      <!-- ===== カード3：コピー用の見本（増やすときはこれを複製）===== -->
-      <a class="card" href="template-product.html">
-        <img src="images/photo.jpg" alt="作物の名前">
+      <!-- ===== トマト3 ===== -->
+      <a class="card" href="tomato3.html">
+
+        <img src="images/tomato.jpg" alt="フルーツトマト">
+
         <div class="card-body">
-          <span class="tag">タグ</span>
-          <h3>作物の名前</h3>
-          <p>ひとことアピール（20文字くらい）</p>
+          <span class="tag">おすすめ</span>
+
+          <h3>フルーツトマト</h3>
+
+          <p>
+            濃厚な甘さ！
+            デザート感覚で食べられます。
+          </p>
         </div>
       </a>
 
     </div>
   </main>
 
-  <!-- ▼ 下の帯（全ページ共通）✏️ 学校名・年などを入れよう -->
+  <!-- ▼ フッター -->
   <footer class="site-footer">
-    © 2026 ○○農業高校 ／ 農業情報活用の授業で作りました
+    © 2026 愛媛県立西条農業高等学校 ／ 農業情報活用の授業で作りました
   </footer>
 
 </body>
